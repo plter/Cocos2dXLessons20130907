@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="HelloNDK" default="BuildBridgeHeader">
+	
+    <target name="BuildBridgeHeader">
+        <exec executable="javah" dir="bin/classes">
+        	<arg value="-d"/>
+        	<arg value="../../jni"/>
+        	<arg value="-jni"/>
+        	<arg value="cn.eoe.hellondk.Bridge"/>
+        </exec>
+    	
+    	<antcall target="BuildNativeMathHeader"></antcall>
+    </target>
+	
+    <target name="BuildNativeMathHeader">
+        <exec executable="javah" dir="bin/classes">
+        	<arg value="-d"/>
+        	<arg value="../../jni"/>
+        	<arg value="-jni"/>
+        	<arg value="cn.eoe.hellondk.NativeMath"/>
+        </exec>
+    </target>
+	
+	
+</project>
