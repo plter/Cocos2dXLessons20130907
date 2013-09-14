@@ -29,11 +29,11 @@ bool HelloWorld::init()
         return false;
     }
 
-//    CCSprite* s = CCSprite::create("img.jpg");
-//    s->setAnchorPoint(ccp(0, 0));
-//    addChild(s);
+    CCSprite* s = CCSprite::create("img.jpg");
+    s->setAnchorPoint(ccp(0.5, 0.5));
+    addChild(s);
     
-    scheduleUpdate();
+//    scheduleUpdate();
     
     return true;
 }
