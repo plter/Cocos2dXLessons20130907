@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'L004UsingA' target in the 'L004UsingA' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
