@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'L005Transition' target in the 'L005Transition' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
