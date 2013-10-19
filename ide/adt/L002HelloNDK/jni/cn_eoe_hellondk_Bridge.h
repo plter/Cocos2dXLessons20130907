@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jint JNICALL Java_cn_eoe_hellondk_Bridge_getNum
   (JNIEnv *, jobject);
 
+/*
+ * Class:     cn_eoe_hellondk_Bridge
+ * Method:    callC
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_cn_eoe_hellondk_Bridge_callC
+  (JNIEnv *, jclass);
+
 #ifdef __cplusplus
 }
 #endif

@@ -15,6 +15,8 @@ public class MainActivity extends Activity {
         
         System.out.println(">>>>>>>>>>>>>>"+new Bridge().getNum());
         System.out.println(">>>>>>>>>>>>>>"+NativeMath.max(2, 3));
+        
+        Bridge.callC();
     }
     
 
